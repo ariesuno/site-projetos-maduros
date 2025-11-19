@@ -1,26 +1,55 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Cores Suno */
+  --color-suno-red: #D42126;
+  --color-suno-gray: #4B4B4B;
+  
+  /* Neutros */
+  --color-neutral-10: #212121;
+  --color-neutral-8: #666666;
+  --color-neutral-5: #999999;
+  --color-neutral-3: #BBBBBB;
+  --color-neutral-2: #DDDDDD;
+  
+  /* Fontes */
+  --font-heading: 'Montserrat', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Apple Color Emoji', 'Segoe UI Emoji';
+  --font-body: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Apple Color Emoji', 'Segoe UI Emoji';
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  /* Cores Suno */
+  --color-suno-red: #D42126;
+  --color-suno-gray: #4B4B4B;
+  
+  /* Neutros */
+  --color-neutral-10: #212121;
+  --color-neutral-8: #666666;
+  --color-neutral-5: #999999;
+  --color-neutral-3: #BBBBBB;
+  --color-neutral-2: #DDDDDD;
+  
+  /* Fontes */
+  --font-heading: var(--font-heading);
+  --font-body: var(--font-body);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* Aplicar fontes aos elementos */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+}
+
+body, p, span, input, button {
+  font-family: var(--font-body);
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: #ffffff;
+  color: var(--color-neutral-10);
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
 }

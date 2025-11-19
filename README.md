@@ -1,36 +1,164 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Suno Energias Limpas Projetos Maduros
 
-## Getting Started
+Site institucional minimalista para disponibilização de documentos jurídicos da empresa Suno Energias Limpas Projetos Maduros.
 
-First, run the development server:
+## Sobre o Projeto
+
+Este é um site single page desenvolvido em Next.js para cumprir obrigações jurídicas da empresa, disponibilizando 7 documentos em formato PDF para download.
+
+## Tecnologias Utilizadas
+
+- **Next.js 16** (App Router)
+- **TypeScript**
+- **Tailwind CSS 4**
+- **React 19**
+
+## Identidade Visual
+
+O projeto segue rigorosamente os Guardrails da marca Suno:
+
+### Cores
+
+- **Suno Red**: `#D42126` - Ações primárias e ênfases
+- **Suno Gray**: `#4B4B4B` - Textos fortes
+- **Neutros**: `#212121`, `#666666`, `#999999`, `#BBBBBB`, `#DDDDDD`
+
+### Tipografia
+
+- **Montserrat** (700/500/400) - Títulos e elementos de UI
+- **Inter** (700/600/400) - Textos e sistemas
+
+## Instalação
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+# Instalar dependências
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Desenvolvimento
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+# Iniciar servidor de desenvolvimento
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+O site estará disponível em [http://localhost:3000](http://localhost:3000)
 
-## Learn More
+## Adicionar Documentos PDF
 
-To learn more about Next.js, take a look at the following resources:
+1. Navegue até o diretório `public/documents/`
+2. Adicione os 7 documentos PDF com os seguintes nomes:
+   - `documento-01.pdf`
+   - `documento-02.pdf`
+   - `documento-03.pdf`
+   - `documento-04.pdf`
+   - `documento-05.pdf`
+   - `documento-06.pdf`
+   - `documento-07.pdf`
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Os títulos dos documentos podem ser editados no arquivo `components/DocumentList.tsx`.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Build de Produção
 
-## Deploy on Vercel
+```bash
+# Criar build de produção
+npm run build
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+# Iniciar servidor de produção
+npm start
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Deploy no Vercel
+
+### Configuração Inicial
+
+1. Instale a CLI do Vercel (se ainda não tiver):
+```bash
+npm i -g vercel
+```
+
+2. Faça login no Vercel:
+```bash
+vercel login
+```
+
+3. Conecte o projeto ao Vercel:
+```bash
+vercel
+```
+
+### Deploy Automático via Git
+
+1. Crie um repositório no GitHub/GitLab/Bitbucket
+2. Faça push do código:
+```bash
+git add .
+git commit -m "Initial commit"
+git remote add origin <seu-repositorio>
+git push -u origin main
+```
+
+3. No painel do Vercel (https://vercel.com):
+   - Clique em "Add New Project"
+   - Importe seu repositório
+   - O Vercel detectará automaticamente as configurações do Next.js
+   - Clique em "Deploy"
+
+4. Deploy automático estará configurado:
+   - Commits na branch `main` → Deploy em produção
+   - Pull requests → Deploy de preview
+
+### Configuração MCP Vercel
+
+Para usar o MCP (Model Context Protocol) do Vercel, configure as credenciais de API no seu ambiente de desenvolvimento conforme a documentação do Cursor.
+
+## Estrutura do Projeto
+
+```
+site-projetos-maduros/
+├── app/
+│   ├── layout.tsx          # Layout raiz com fontes e metadata
+│   ├── page.tsx            # Página principal
+│   └── globals.css         # Estilos globais e variáveis CSS
+├── components/
+│   ├── Header.tsx          # Cabeçalho com nome da empresa
+│   ├── Footer.tsx          # Rodapé com CNPJ
+│   └── DocumentList.tsx    # Lista de documentos para download
+├── lib/
+│   └── fonts.ts            # Configuração de fontes Google
+├── public/
+│   └── documents/          # Diretório para PDFs
+├── .prettierrc             # Configuração Prettier
+├── vercel.json             # Configuração Vercel
+└── package.json            # Dependências do projeto
+```
+
+## Lint e Formatação
+
+```bash
+# Executar ESLint
+npm run lint
+
+# Formatar código com Prettier (se instalado)
+npx prettier --write .
+```
+
+## Conformidade com Guardrails
+
+Este projeto segue estritamente os Guardrails estabelecidos:
+
+- ✅ Apenas cores da paleta Suno (red, gray) e neutros
+- ✅ Apenas tipografias Montserrat e Inter
+- ✅ Sem gradientes ou sombras pesadas
+- ✅ Design minimalista e acessível
+- ✅ TypeScript estrito
+- ✅ Sem documentos adicionais além deste README
+
+## Informações da Empresa
+
+**Razão Social**: Suno Energias Limpas Projetos Maduros  
+**CNPJ**: 00.000.000/0000-00 *(atualizar com CNPJ real)*
+
+## Licença
+
+Projeto de uso interno da Suno Energias Limpas Projetos Maduros.
