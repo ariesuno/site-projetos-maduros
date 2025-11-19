@@ -3,8 +3,8 @@ import { fontHeading, fontBody } from "@/lib/fonts";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Suno Energias Limpas Projetos Maduros",
-  description: "Documentos jurídicos da Suno Energias Limpas Projetos Maduros",
+  title: "Suno Energias Limpas Projetos Maduros S.A",
+  description: "Documentos da oferta de distribuição pública - Suno Energias Limpas Projetos Maduros S.A",
 };
 
 export default function RootLayout({

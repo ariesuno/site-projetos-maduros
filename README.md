@@ -1,10 +1,10 @@
-# Suno Energias Limpas Projetos Maduros
+# Suno Energias Limpas Projetos Maduros S.A
 
-Site institucional minimalista para disponibilização de documentos jurídicos da empresa Suno Energias Limpas Projetos Maduros.
+Site institucional minimalista para disponibilização de documentos da oferta de distribuição pública da Suno Energias Limpas Projetos Maduros S.A.
 
 ## Sobre o Projeto
 
-Este é um site single page desenvolvido em Next.js para cumprir obrigações jurídicas da empresa, disponibilizando 7 documentos em formato PDF para download.
+Este é um site single page desenvolvido em Next.js para disponibilizar documentos da oferta de distribuição pública de debêntures, com 3 documentos em formato PDF para download.
 
 ## Tecnologias Utilizadas
 
@@ -47,14 +47,10 @@ O site estará disponível em [http://localhost:3000](http://localhost:3000)
 ## Adicionar Documentos PDF
 
 1. Navegue até o diretório `public/documents/`
-2. Adicione os 7 documentos PDF com os seguintes nomes:
-   - `documento-01.pdf`
-   - `documento-02.pdf`
-   - `documento-03.pdf`
-   - `documento-04.pdf`
-   - `documento-05.pdf`
-   - `documento-06.pdf`
-   - `documento-07.pdf`
+2. Adicione os 3 documentos PDF com os seguintes nomes:
+   - `aviso-ao-mercado.pdf` - Aviso ao Mercado da Oferta de Distribuição Pública
+   - `escritura-debentures.pdf` - Instrumento Particular de Escritura da 1ª (Primeira) Emissão de Debêntures
+   - `ato-societario.pdf` - Ato Societário
 
 Os títulos dos documentos podem ser editados no arquivo `components/DocumentList.tsx`.
 
@@ -158,8 +154,8 @@ Este projeto segue estritamente os Guardrails estabelecidos:
 
 ## Informações da Empresa
 
-**Razão Social**: Suno Energias Limpas Projetos Maduros  
-**CNPJ**: 00.000.000/0000-00 *(atualizar com CNPJ real)*
+**Razão Social**: Suno Energias Limpas Projetos Maduros S.A  
+**CNPJ**: 53.192.626/0001-03
 
 ## Licença
 

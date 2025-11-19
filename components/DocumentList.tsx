@@ -2,38 +2,18 @@ export default function DocumentList() {
   const documents = [
     {
       id: 1,
-      title: "Contrato Social e Alterações Contratuais Consolidadas da Empresa",
-      filename: "documento-01.pdf"
+      title: "Aviso ao Mercado da Oferta de Distribuição Pública",
+      filename: "aviso-ao-mercado.pdf"
     },
     {
       id: 2,
-      title: "Declaração de Enquadramento como Microempresa ou Empresa de Pequeno Porte",
-      filename: "documento-02.pdf"
+      title: "Instrumento Particular de Escritura da 1ª (Primeira) Emissão de Debêntures",
+      filename: "escritura-debentures.pdf"
     },
     {
       id: 3,
-      title: "Certidão Negativa de Débitos Relativos aos Tributos Federais e Dívida Ativa",
-      filename: "documento-03.pdf"
-    },
-    {
-      id: 4,
-      title: "Certidão Negativa de Débitos Trabalhistas emitida pela Justiça do Trabalho",
-      filename: "documento-04.pdf"
-    },
-    {
-      id: 5,
-      title: "Comprovante de Inscrição e Situação Cadastral no Cadastro Nacional de Pessoas Jurídicas",
-      filename: "documento-05.pdf"
-    },
-    {
-      id: 6,
-      title: "Declaração de Regularidade Fiscal e Cumprimento de Obrigações Acessórias",
-      filename: "documento-06.pdf"
-    },
-    {
-      id: 7,
-      title: "Relatório de Composição Societária e Qualificação dos Administradores",
-      filename: "documento-07.pdf"
+      title: "Ato Societário",
+      filename: "ato-societario.pdf"
     }
   ];
 
