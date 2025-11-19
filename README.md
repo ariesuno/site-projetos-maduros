@@ -89,24 +89,26 @@ vercel
 
 ### Deploy Automático via Git
 
-1. Crie um repositório no GitHub/GitLab/Bitbucket
-2. Faça push do código:
-```bash
-git add .
-git commit -m "Initial commit"
-git remote add origin <seu-repositorio>
-git push -u origin main
-```
+**Repositório:** https://github.com/ariesuno/site-projetos-maduros
 
-3. No painel do Vercel (https://vercel.com):
+O repositório já está configurado e conectado ao GitHub. Para fazer deploy:
+
+1. No painel do Vercel (https://vercel.com):
    - Clique em "Add New Project"
-   - Importe seu repositório
+   - Importe o repositório: `ariesuno/site-projetos-maduros`
    - O Vercel detectará automaticamente as configurações do Next.js
    - Clique em "Deploy"
 
-4. Deploy automático estará configurado:
+2. Deploy automático estará configurado:
    - Commits na branch `main` → Deploy em produção
    - Pull requests → Deploy de preview
+
+3. Para futuros updates:
+```bash
+git add .
+git commit -m "sua mensagem"
+git push origin main
+```
 
 ### Configuração MCP Vercel
 
