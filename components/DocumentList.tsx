@@ -28,9 +28,10 @@ export default function DocumentList() {
           <li key={doc.id}>
             <a
               href={`/documents/${doc.filename}`}
-              download
+              target="_blank"
+              rel="noopener noreferrer"
               className="flex items-start gap-4 p-4 border border-[--color-neutral-2] rounded-lg hover:border-[--color-suno-red] hover:text-[--color-suno-red] transition-colors group"
-              aria-label={`Baixar ${doc.title}`}
+              aria-label={`Abrir ${doc.title} em nova aba`}
             >
               <svg
                 className="w-6 h-6 flex-shrink-0 mt-0.5 text-[--color-neutral-5] group-hover:text-[--color-suno-red] transition-colors"
