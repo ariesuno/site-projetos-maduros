@@ -2,16 +2,26 @@ export default function DocumentList() {
   const documents = [
     {
       id: 1,
+      title: "Anúncio de Início",
+      filename: "anuncio-de-inicio.pdf"
+    },
+    {
+      id: 2,
+      title: "Primeiro Aditamento à Escritura de Emissão",
+      filename: "primeiro-aditamento-escritura.pdf"
+    },
+    {
+      id: 3,
       title: "Aviso ao Mercado da Oferta de Distribuição Pública",
       filename: "aviso-ao-mercado.pdf"
     },
     {
-      id: 2,
+      id: 4,
       title: "Instrumento Particular de Escritura da 1ª (Primeira) Emissão de Debêntures",
       filename: "escritura-debentures.pdf"
     },
     {
-      id: 3,
+      id: 5,
       title: "Ato Societário",
       filename: "ato-societario.pdf"
     }
@@ -22,7 +32,7 @@ export default function DocumentList() {
       <h2 className="text-2xl font-bold text-[--color-neutral-10] mb-8">
         Documentos Disponíveis
       </h2>
-      
+
       <ul className="space-y-4">
         {documents.map((doc) => (
           <li key={doc.id}>
